@@ -205,64 +205,260 @@
                 </li>
                 </ul>
 
-        </nav>
-    </div>
-</div>
-<!-- ============================================================== -->
-<!-- end left sidebar -->
-<!-- ============================================================== -->
-<!-- ============================================================== -->
-<!-- wrapper  -->
-<!-- ============================================================== -->
-<div class="dashboard-wrapper">
-    <div class="dashboard-ecommerce">
-        <div class="container-fluid dashboard-content">
-            <!-- ============================================================== -->
-            <!-- pageheader  -->
-            <!-- ============================================================== -->
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="page-header" id="top">
-                        <h2 class="pageheader-title">Project Create</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- end pageheader  -->
-            <!-- ============================================================== -->
+            </nav>
         </div>
     </div>
     <!-- ============================================================== -->
-
+    <!-- end left sidebar -->
     <!-- ============================================================== -->
-</div>
-<!-- ============================================================== -->
-<!-- end wrapper  -->
-<!-- ============================================================== -->
-</div>
-<!-- ============================================================== -->
-<!-- end main wrapper  -->
-<!-- ============================================================== -->
-<!-- Optional JavaScript -->
-<!-- jquery 3.3.1 -->
-<script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-<!-- bootstap bundle js -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-<!-- slimscroll js -->
-<script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
-<!-- main js -->
-<script src="assets/libs/js/main-js.js"></script>
-<!-- chart chartist js -->
-<script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
-<!-- sparkline js -->
-<script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
-<!-- morris js -->
-<script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
-<script src="assets/vendor/charts/morris-bundle/morris.js"></script>
-<!-- chart c3 js -->
-<script src="assets/vendor/charts/c3charts/c3.min.js"></script>
-<script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
-<script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
-<script src="assets/libs/js/dashboard-ecommerce.js"></script>
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+    <div class="dashboard-wrapper">
+        <div class="dashboard-ecommerce">
+            <div class="container-fluid dashboard-content">
+
+                <!-- ============================================================== -->
+                <!-- pageheader   // THIS IS THE FIRST ROW-->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header" id="top">
+                            <h2 class="pageheader-title">Project Create</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader  -->
+                <!-- ============================================================== -->
+                <!-- ====  // THIS IS THE SECOND ROW -  FORM   =========== -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+
+                        <form>
+
+
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 ">
+                                    <div class="form-group">
+                                        <label for="projectname" class="col-form-label">Project Name</label>
+                                        <input id="projectname" type="text" placeholder="first name" class="form-control">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 ">
+                                    <div class="form-group">
+                                        <label for="projectcode" class="col-form-label">Project Code</label>
+                                        <input id="projectcode" type="text"  placeholder="project code" class="form-control">
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-12 col-md-12 ">
+                                    <div class="form-group">
+                                        <label>Assigned Manager </label> <br>
+                                        <select name="roleid" id="roleid" class="custom-select" required="required">
+
+                                            <option value="select">Select</option>
+                                            <option value="admin">Admin</option>
+                                            <option value="manager">Manager</option>
+                                            <option value="employee">Employee</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 ">
+                                    <div class="form-group">
+                                        <label>Project Detail</label><br>
+
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">Project Start Date</span>
+                                        </label>
+
+                                        <label class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">Project End Date</span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6 col-md-6 ">
+                                    <div class="form-group">
+                                        <label>Choose a Role : </label> <br>
+                                        <select name="roleid" id="roleid" class="custom-select" required="required">
+
+                                            <option value="admin">Admin</option>
+                                            <option value="manager">Manager</option>
+                                            <option value="employee">Employee</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <label for="exampleFormControlTextarea1">Project Detail</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="float-right">
+                            <button type="button" class="btn btn-success">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                    <div class="col-sm-12 col-md-12 ">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="page-header" id="top">
+                                    <h2 class="pageheader-title"> Project List</h2>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+
+
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Email(username)</th>
+                                            <th scope="col">Gender</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Role</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Sam</td>
+                                            <td>sam@cyber</td>
+                                            <td>male</td>
+                                            <td>54544758956</td>
+                                            <td>Manager</td>
+                                            <td class="actions">
+                                                <a href=""><button type="button" class="btn btn-primary btn-sm">Update</button></i></a>
+                                                <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jeam</td>
+                                            <td>gersam@cyber</td>
+                                            <td>female</td>
+                                            <td>53244758956</td>
+                                            <td>Dealer</td>
+                                            <td class="actions">
+                                                <a href=""><button type="button" class="btn btn-primary btn-sm">Update</button></i></a>
+                                                <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>ErSam</td>
+                                            <td>ersam@cyber</td>
+                                            <td>male</td>
+                                            <td>53544758956</td>
+                                            <td>Employee</td>
+                                            <td class="actions">
+                                                <a href=""><button type="button" class="btn btn-primary btn-sm">Update</button></i></a>
+                                                <a href="" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button> </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!-- footer -->
+                                    <footer class="page-footer font-small blue fixed-bottom">
+                                        <div class="footer-copyright text-center py-3">© 2020 Cybertek – All Rights Reserved</div>
+                                    </footer>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- end wrapper  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end main wrapper  -->
+        <!-- ============================================================== -->
+        <!-- Optional JavaScript -->
+        <!-- jquery 3.3.1 -->
+        <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+        <!-- bootstap bundle js -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <!-- slimscroll js -->
+        <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+        <!-- main js -->
+        <script src="assets/libs/js/main-js.js"></script>
+        <!-- chart chartist js -->
+        <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+        <!-- sparkline js -->
+        <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+        <!-- morris js -->
+        <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+        <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+        <!-- chart c3 js -->
+        <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+        <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+        <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+        <script src="assets/libs/js/dashboard-ecommerce.js"></script>
 </body>
 </html>
